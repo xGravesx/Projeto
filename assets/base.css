@@ -2624,7 +2624,7 @@ menu-drawer+.header__search {
 .header__search {
   display: inline-flex;
   line-height: 0;
-  background-color: B6BBC4;
+  
 }
 
 .header--top-center>.header__search {
@@ -2681,6 +2681,7 @@ details[open] .modal-overlay::after {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
   min-height: calc(100% + var(--inputs-margin-offset) + (2 * var(--inputs-border-width)));
   height: 100%;
+  background-color: B6BBC4;
 }
 
 .search-modal__content {
