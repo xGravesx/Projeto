@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <title>SantacrØW - A loja mais dark do Brasil</title>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue-router@3"></script>
-</head>
-
-<body>
-  <div id="app">
-
-    <!-- Cabeçalho da página -->
-    <div class="header">
+<template>
+   <!-- Cabeçalho da página -->
+   <div class="header">
       <img src="images/logo.png" alt="Logo Santacrow" class="logo">
     </div>
 
@@ -67,22 +55,20 @@
       <li>
         <h2>Termos e Condições</h2>
         <ul>
-          <li><a href="https://www.santacrow.com.br/pages/termos-e-condicoes-crow-prime">Crow Prime</a></li>
-          <li><a href="https://www.santacrow.com.br/pages/termos-cashback-crow-prime">Cashback Crow Prime</a></li>
-          <li><a href="https://www.santacrow.com.br/pages/politica-de-troca">Trocas e Devoluções</a></li>
-          <li><a href="https://www.santacrow.com.br/pages/politicas-de-privacidade">Políticas de Privacidade</a></li>
+          <li><a href="crow-prime.html">Crow Prime</a></li>
+          <li><a href="cashback-crow-prime.html">Cashback Crow Prime</a></li>
+          <li><a href="trocas-devolucoes.html">Trocas e Devoluções</a></li>
+          <li><a href="privacidade.html">Políticas de Privacidade</a></li>
         </ul>
       </li>
       <li>
         <h2>Minha Conta</h2>
         <ul>
-          <li><a href="https://www.santacrow.com.br/pages/meus-pedidos">Meus Pedidos</a></li>
-          <li><a href="https://www.santacrow.com.br/pages/contact">Ajuda</a></li>
-          <li><a href="https://www.santacrow.com.br/pages/entregas">Envios e Entregas</a></li>
+          <li><a href="meus-pedidos.html">Meus Pedidos</a></li>
+          <li><a href="ajuda.html">Ajuda</a></li>
+          <li><a href="entregas.html">Envios e Entregas</a></li>
         </ul>
       </li>
-    </ul>
-
       <li>
         <h2>Contato</h2>
         <ul>
@@ -95,6 +81,7 @@
 
     <!-- Seção de newsletter da página -->
     <div class="newsletter">
+
       <!-- Conteúdo da newsletter -->
       <h2>Inscreva-se na nossa newsletter</h2>
       Receba novidades
@@ -106,6 +93,7 @@
 
     <!-- Redes sociais no rodapé -->
     <div class="redesSociais">
+
       <!-- Conteúdo das redes sociais -->
       <ul>
         <li>
@@ -133,40 +121,15 @@
     <div class="footer">
       <p>&copy; 2023 SantacrØW. Todos os direitos reservados.</p>
     </div>
-  </div>
-
+  
   <script>
-    // Componentes Vue
-    const HomeComponent = { template: '<h2>Início</h2>' };
-    const BlackFridayComponent = { template: '<h2>BLACK FRIDAY</h2>' };
-    const CrowPrimeComponent = { template: '<h2>CROW PRIME</h2>' };
-    const ColecoesComponent = { template: '<h2>Coleções</h2>' };
-    const AcessoriosComponent = { template: '<h2>Acessórios</h2>' };
-    const DecoracaoComponent = { template: '<h2>Decoração</h2>' };
-
-    // Configuração das rotas
-    const routes = [
-      { path: '/', component: HomeComponent },
-      { path: '/black-friday', component: BlackFridayComponent },
-      { path: '/crow-prime', component: CrowPrimeComponent },
-      { path: '/colecoes', component: ColecoesComponent },
-      { path: '/acessorios', component: AcessoriosComponent },
-      { path: '/decoracao', component: DecoracaoComponent }
-    ];
-
-    // Criação da instância Vue e configuração do Vue Router
-    const router = new VueRouter({
-      routes
-    });
-
-    new Vue({
-      el: '#app',
-      router
-    });
+  export default {
+    name: 'Home'
+  }
   </script>
-
-  <style>
-    .header {
+  
+  <style scoped>
+  .header {
       text-align: center;
       background-color: #e6e6e6;
       padding: 10px 0;
@@ -181,14 +144,12 @@
       display: inline-block;
       margin-right: 20px;
     }
-
     #lancamentos {
       width: 100%;
       margin: 0 auto;
       padding: 0 2%;
       box-sizing: border-box;
     }
-
     .produto {
       width: 22%; 
       margin-right: 2%;
@@ -198,12 +159,10 @@
       box-sizing: border-box;
       text-align: center;
     }
-
     .produto img {
       width: 100%; 
       height: auto; 
     }
-
     button {
       margin: 5px 0;
       text-align: center;
@@ -211,7 +170,6 @@
       padding: 10px 0;
       box-sizing: border-box;
     }
-
     ul.menuFooter {
       width: 100%;
       margin: 0 auto;
@@ -221,28 +179,24 @@
       display: flex;
       justify-content: center;
     }
-
     ul.menuFooter h2 {
       width: 100%;
       margin-right: 20px;
       text-align: left;
       margin-bottom: 10px;
     }
-
     ul.menuFooter li {
       width: 100%;
       margin-right: 20px;
       text-align: left;
       padding: 5px;
     }
-
     .newsletter {
       text-align: left;
       list-style-type: none;
       padding: 0;
       background-color: white;
     }
-
     .footer,
     .menuFooter {
       text-align: center;
@@ -250,32 +204,27 @@
       padding: 0;
       background-color: #e6e6e6;
     }
-
     p {
       color: #525252;
       border: 1px solid #ccc;
       padding: 10px;
     }
-
     .redesSociais ul {
       text-align: right;
       padding: 0;
       background-color: #e6e6e6;
     }
-
     .redesSociais li {
       text-align: right;
       display: inline-block;
       margin-right: 10px;
     }
-
     .redesSociais img {
       width: 30px; 
       height: auto;
       display: inline-block;
       align-items:center;
     }
-
     button.comprar {
       background-color: #ffffff; 
       color: #000000; 
@@ -284,11 +233,9 @@
       padding: 10px 20px; 
       cursor: pointer; 
     }
-
     button.comprar:hover {
       background-color: #000000; 
       color: #ffffff; 
     }
   </style>
-</body>
-</html>
+  

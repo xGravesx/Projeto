@@ -1,0 +1,15 @@
+<h1>Testing API</h1>
+<div id="contents"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(function () {
+        $.get('https://jsonplaceholder.typicode.com/posts', function (data) {
+            data.forEach(function (post) {
+                $('#contents').append('<h2>' + post.title + '</h2>');
+                $('#contents').append('<div>' + post.body + '</div>');
+                $('#contents').append('<h1>' + post.title + '</h1>');
+            });
+        });
+    });
+</script>
