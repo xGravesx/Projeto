@@ -1,0 +1,20 @@
+<h1>Testing API</h1>
+<div id="contents"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(function () {
+        $.get('https://fakestoreapi.com/products', function (data) {
+            data.forEach(function (product) {
+                $('#contents').append('<h1>ID: ' + product.id + '</h1>');
+                $('#contents').append('<div>Title: ' + product.title + '</div>');
+                $('#contents').append('<div>Description: ' + product.description + '</div>');
+                $('#contents').append('<div>Price: $' + product.price + '</div>');
+                $('#contents').append('<div>Category: ' + product.category + '</div>');
+                $('#contents').append('<img src="' + product.image + '" alt="Product Image" style="max-width: 200px; max-height: 200px;">');
+                $('#contents').append('<div>Rating: ' + product.rating.rate + ' (' + product.rating.count + ' reviews)</div>');
+                $('#contents').append('<hr>'); // Adicionando uma linha horizontal para separar os produtos
+            });
+        });
+    });
+</script>
