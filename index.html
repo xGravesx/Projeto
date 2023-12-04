@@ -1,144 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Styles/style.scss">
-
-  <title>Frontend Mentor | E-commerce product page</title>
-  <!-- Fonts -->
-  <link rel="preconnect" href="=https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display">
-
+  <title>SantacrØW - A loja mais dark do Brasil</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
 <body>
-  <div class="container">
 
-    <!-- Navbar -->
-    <nav>
-      <div class="nav-container">
-        <div class="nav_left-sec">
-          <img src="=./images/icon-menu.svg" alt="menu" class="hidden menu">
-          <img src="=./images/logo.svg" alt="logo" class="nav_logo">
-          <div class="overlay"></div>
-          <ul class="nav_links">
-            <img src="./images/icon-close.svg" alt="close" class="close-btn hidden">
-            <li class="nav_link">Collections</li>
-            <li class="nav_link">Man</li>
-            <li class="nav_link">Woman</li>
-            <li class="nav_link">About</li>
-            <li class="nav_link">Contact</li>
-          </ul>
-        </div>
-        <div class="nav_right-sec">
-
-          <!-- cart -->
-          <div class="cart-container">
-            <button class="cart-btn">
-              <span class="indicator"></span>
-              <img src="./images/icon-cart.svg" alt="cart" class="cart">
-            </button>
-            <div class="cart-wrp invisible">
-              <p class="cart-heading">cart</p>
-            <div class="divider"></div>
-            <div class="cart-content empty">
-              <p>You cart is empty</p>
-            </div>
-            </div>
-
-
-          </div>
-          <img src="./images/image-avatar.png" alt="avatar">
-        </div>
-      </nav>
-      <main>
-        <!--thumbnails-->
-        <section class="thumbnails">
-          <img src="./images/image-product-1.jpg" alt="product"class="main-thumbnail invisible-mob">
-          <div class="mobile-thumb hidden">
-            <img src=".images/image-product-1.png" alt="product" class="`thumb-mob">
-            <button id="next"><img src=".images/icon-next.svg" alt="netx"></button>
-            <button id="previous"><img src=".images/icon-previous.svg" alt="previous"></button>
-          </div>
-          
-        </section>
-      </main>
-    </div>
-    <script src="app.js"</script>    
-    <header>
-
-      <div class="hamburguer-logo-group">
-        <div class="hamburguer">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-
-      
-
-        <nav class="menu hidden">
-          <div class="slide-menu">
-            <img id="btnMenuClose" src="./images/icon-close.svg" alt="icon-close">
-
-            <ul>
-              <li><a href="#">Collections</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-
-            </ul>
-
-          </div>
-
-        </nav>
-        <!-- Menu Here -->
-        
-
-      <div class="cart-avatar-group">
-        <div class="btnCart">
-        <img scr="./images/icon-cart.svg"alt="cart icon">
-        <div class="cart-count"></div>
-      </div>
-      <img class="avatar" src="./images/image-avatar.png" alt=" image-avatar"
-      
-    </header>
-
+  <div class="coturno"></div>
+  <div class="bota"></div>
+  <div class="sapatoBoneca"></div>
+  <div class="bonecaPrincessa"></div>
+  <div class="petry"></div>
+  
+  <!-- Cabeçalho da página -->
+  <div class="header">
+    <img src="images/logo.png" alt="Logo Santacrow" class="logo">
+    <ul class="nav">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="black-friday.html">BLACK FRIDAY</a></li>
+      <li><a href="crow-prime.html">CROW PRIME</a></li>
+      <li><a href="colecoes.html">Coleções</a></li>
+      <li><a href="acessorios.html">Acessórios</a></li>
+      <li><a href="decoracao.html">Decoração</a></li>
+    </ul>
   </div>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
+  <!-- Seção de produtos da página -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="products">
+    <h2>Lancamentos</h2>
+    <div class="coturno">
+      <img src="images/coturno.png" alt="Coturno Preto com Fivelas">
+      <h3>Coturno Preto com Fivelas</h3>
+      <p>R$ 299,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="product bota">
+      <img src="images/bota.png" alt="Bota Vermelha com Correntes">
+      <h3>Bota Vermelha com Correntes</h3>
+      <p>R$ 349,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="product sapatoBoneca">
+      <img src="images/sapatoBoneca.png" alt="Sapato Boneca Preto com Laço">
+      <h3>Sapato Boneca Preto com Laço</h3>
+      <p>R$ 199,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="product bonecaPrincessa">
+      <img src="images/bonecaPrincesa.png" alt="Sapato Boneca Preto com Laço">
+      <h3>Sapato Boneca Princesa</h3>
+      <p>R$ 199,90</p>
+      <button>Comprar</button>
+    </div>
+    
+    <div class="product petry">
+      <img src="images/petry.png" alt="Sapato Boneca Preto com Laço">
+      <h3>MeowDecor</h3>
+      <p>R$ 199,90</p>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <!-- Seção de newsletter da página -->
+  <div class="newsletter">
+    <h2>Inscreva-se na nossa newsletter</h2>
+    <p>Receba novidades, promoções e muito mais no seu e-mail.</p>
+    <form>
+      <input type="email" name="email" placeholder="Digite o seu e-mail">
+      <button>Enviar</button>
+    </form>
+  </div>
+
+  <!-- Rodapé da página -->
+  <div class="footer">
+    <p>© 2023 SantacrØW. Feito com amor e magia negra.</p>
+    <ul>
+      <li><a href="https://www.facebook.com/santacrow">Facebook</a></li>
+      <li><a href="https://www.twitter.com/santacrow">Twitter</a></li>
+      <li><a href="https://www.instagram.com/santacrow">Instagram</a></li>
+    </ul>
   </div>
 </body>
 </html>

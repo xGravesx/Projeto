@@ -1,0 +1,62 @@
+/* Eu removi as classes .coturno, .bota, .bonecaPrincessa, .sapatoBoneca e .petry, pois elas não são necessárias. Você pode usar a classe .product para todos os produtos, e apenas mudar o caminho da imagem de fundo. */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.product {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  transition: transform 0.5s ease-in-out;
+  /* Eu adicionei uma borda preta para destacar os produtos */
+  border: 2px solid black;
+}
+
+.product:hover {
+  transform: scale(1.1);
+}
+
+/* Eu adicionei um estilo semelhante para cada produto, ajustando os caminhos das imagens conforme necessário */
+.coturno {
+  background-image: url("images/coturno.png");
+}
+
+.coturno:hover {
+  background-image: url("images/coturno02.png");
+}
+
+.bota {
+  background-image: url("images/bota.png");
+}
+
+.bota:hover {
+  background-image: url("images/bota02.png");
+}
+
+.sapatoBoneca {
+  background-image: url("images/sapatoBoneca.png");
+}
+
+.sapatoBoneca:hover {
+  background-image: url("images/sapatoBoneca02.png");
+}
+
+.bonecaPrincessa {
+  background-image: url("images/bonecaPrincesa.png");
+}
+
+.bonecaPrincessa:hover {
+  background-image: url("images/bonecaPrincesa02.png");
+}
+
+.petry {
+  background-image: url("images/petry.png");
+}
+
+.petry:hover {
+  background-image: url("images/petry02.png");
+}
